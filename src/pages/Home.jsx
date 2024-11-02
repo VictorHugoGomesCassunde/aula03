@@ -1,5 +1,5 @@
 import {useEffect, useState } from "react";
-import ListadeProdutinhos from "./ListadeProdutinhos";
+import ListadeProdutinhos from "../componets/ListadeProdutinhos";
 
 export default function Home() {
 
@@ -16,6 +16,8 @@ const receberListaProdutos = async () => {
 }
 receberListaProdutos();
 }, []);
-
-<ListadeProdutinhos receberListaProdutos={lista}></ListadeProdutinhos>
+<> 
+            <ListadeProdutinhos lista={lista} />
+           
+        </>
 }

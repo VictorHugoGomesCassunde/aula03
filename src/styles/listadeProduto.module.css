@@ -1,6 +1,16 @@
-.home{
+.blocoLista{
     display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
-    background-color: gray;
+    flex-wrap: wrap;
+    width: auto;
+    flex-direction: row;
+}
+.blocosEXE {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    height: 50%;
+    
 }
