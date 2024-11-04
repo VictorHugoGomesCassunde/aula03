@@ -1,9 +1,15 @@
+body {
+    background: linear-gradient(rgb(11, 24, 65), rgb(105, 84, 24))no-repeat;  
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
 .blocoLista{
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: auto;
     flex-wrap: wrap;
-    width: auto;
+    width: auto; 
     flex-direction: row;
 }
 .blocosEXE {
@@ -12,5 +18,16 @@
     flex-direction: row;
     width: auto;
     height: 50%;
-    gap: 5%
+    gap: 5%;
+}
+.produtoitem {
+    background-color: #915612;
+    border-radius: 20px; 
+    height: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 70px;
+    transition: transform 0.3s; 
 }

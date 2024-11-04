@@ -16,8 +16,10 @@ const receberListaProdutos = async () => {
 }
 receberListaProdutos();
 }, []);
+return(
 <> 
             <ListadeProdutinhos lista={lista} />
            
         </>
+)
 }
