@@ -16,6 +16,18 @@ const receberListaProdutos = async () => {
 }
 receberListaProdutos();
 }, []);
+
+if (lista.length === 0) {
+    return <h1>Carregando...</h1>
+
+}
+const orederAz = () => {
+    const listaOredenada = [...lista].sort((a, b) => a.tilhe.localeCompare (b.title));
+    setLista(listaOredenada);
+    
+
+}
+
 return(
 <> 
             <ListadeProdutinhos lista={lista} />
